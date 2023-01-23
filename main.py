@@ -240,7 +240,7 @@ def main():
 		# Show the board's situation
 		print_board(board)
 
-		if board.count('X') + board.count('O') == 9 and not has_won('computer',board) and not has_won('player',board):
+		if board.count('X') + board.count('O') == 9 and not has_won('computer', board) and not has_won('player', board):
 			game_state = 'tie'
 			message = 'Game ended with a tie.'
 
