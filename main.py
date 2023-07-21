@@ -45,7 +45,7 @@ def make_player_move(board: list) -> int:
 			# Check if user's choice isn't occupied by the computer
 			if board[n] != 'O':
 
-				# Check if user's choice isn't occupied by themself
+				# Check if user's choice isn't occupied by themselves
 				if board[n] != 'X':
 					board[n] = 'X'
 					return n
@@ -82,7 +82,7 @@ def find_winning_move(player: str, board: list) -> int:
 			if board[i + 2] == mark and board[i + 1] != other_mark:
 				return i + 1
 		if board[i] != other_mark:
-			if board[i + 1] == mark and board[i + 1] == mark:
+			if board[i + 1] == mark and board[i + 2] == mark:
 				return i
 
 	# Vertical states
